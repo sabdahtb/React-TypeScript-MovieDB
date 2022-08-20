@@ -1,16 +1,24 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Page1 from '~/pages/page1'
-import Page2 from '~/pages/page2'
+
+import { Navbar, Footer } from '~/components'
+import { Favorites, HomePage, Profiles } from '~/pages'
 
 const Navigations = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path='/' element={<Page1 />} />
-        <Route path='page2' element={<Page2 />} />
-      </Routes>
-    </Router>
+    <>
+      <Navbar />
+      <div id='container'>
+        <Router>
+          <Routes>
+            <Route path='/' element={<HomePage />} />
+            <Route path='/profiles' element={<Profiles />} />
+            <Route path='/favorites' element={<Favorites />} />
+          </Routes>
+        </Router>
+      </div>
+      <Footer />
+    </>
   )
 }
 
