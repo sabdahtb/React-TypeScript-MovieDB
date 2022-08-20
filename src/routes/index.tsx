@@ -7,16 +7,16 @@ import { Favorites, HomePage, Profiles } from '~/pages'
 const Navigations = () => {
   return (
     <>
-      <Navbar />
-      <div id='container'>
-        <Router>
+      <Router>
+        <Navbar />
+        <div id='container'>
           <Routes>
             <Route path='/' element={<HomePage />} />
-            <Route path='/profiles' element={<Profiles />} />
+            <Route path='/profile' element={<Profiles />} />
             <Route path='/favorites' element={<Favorites />} />
           </Routes>
-        </Router>
-      </div>
+        </div>
+      </Router>
       <Footer />
     </>
   )
