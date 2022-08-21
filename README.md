@@ -27,3 +27,7 @@ HTML, CSS, JavaScript, ReactJS, React Native, TypeScript etc...
 ## Feedback
 
 If you have any feedback, please tell to my email sabdahutabarat2804@gmail.com
+
+## Web Overview
+
+![alt text](https://res.cloudinary.com/duohdrpvb/image/upload/v1661052465/sabdahtb/Group_1_2_xtcemf.png)
