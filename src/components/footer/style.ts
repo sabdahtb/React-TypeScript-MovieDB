@@ -8,5 +8,11 @@ export const useStyles = createUseStyles({
     marginTop: 0,
     paddingTop: '16px',
     color: '#FFD369',
+    '& p': {
+      textAlign: 'left',
+      fontSize: '10px',
+      marginLeft: '20px',
+      marginTop: '3px',
+    },
   },
 })

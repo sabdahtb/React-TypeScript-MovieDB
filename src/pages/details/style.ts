@@ -4,35 +4,25 @@ const WINDOW_WIDTH = window.innerWidth
 const WINDOW_HEIGHT = window.innerHeight
 
 export const useStyles = createUseStyles({
-  gridsView: {
-    paddingInline: `${Math.floor(WINDOW_WIDTH / 20)}px`,
-    display: 'grid',
-    gridTemplateColumns: `${Math.floor(WINDOW_WIDTH / 4)}px ${Math.floor(
-      WINDOW_WIDTH / 4,
-    )}px ${Math.floor(WINDOW_WIDTH / 4)}px`,
-    gridGap: `${Math.floor(WINDOW_WIDTH / 20)}px`,
-  },
-  gridsItem: {
-    borderRadius: '10px',
-    overflow: 'hidden',
-    backgroundColor: '#393E46',
-    cursor: 'pointer',
-    '& #links': {
-      textDecoration: 'none',
-    },
+  movieDetail: {
+    display: 'flex',
+    justifyContent: 'start',
+    color: '#EEEEEE',
     '& p': {
       margin: '10px',
-      color: '#EEEEEE',
     },
-    '&:hover': {
-      boxShadow: 'rgba(10, 10, 10, 0.5) 1px 2px 6px 1px',
+    '& #movieTitle': {
+      fontSize: '32px',
+      fontWeight: 'bold',
+      textTransform: 'uppercase',
     },
   },
   movieImg: {
-    borderRadius: 'inheriit',
+    borderRadius: '10px',
     width: `${Math.floor(WINDOW_WIDTH / 4)}px`,
-    height: `${Math.floor(WINDOW_HEIGHT / 1.5)}px`,
+    height: `${Math.floor(WINDOW_HEIGHT / 1.4)}px`,
     objectFit: 'cover',
+    margin: '10px',
   },
   pageController: {
     width: '100%',
